@@ -10,7 +10,7 @@ function NavBar() {
   return (
     <div className="  flex flex-row ">
       <div
-        className=" flex flex-col  items-center  "
+        className=" sm:flex sm:flex-col  sm:items-center hidden "
         // style={{ height: " }}
         style={{ height: "100vh", borderRight: "1px solid  lightgrey" }}
       >
@@ -25,9 +25,9 @@ function NavBar() {
       </div>
       <span className=" flex flex-col w-[100%]">
         <span
-          className=" flex items-center  px-8 "
+          className=" flex items-center  sm:px-8  px-3"
           style={{
-            borderBottom: "1px solid grey",
+            borderBottom: "1px solid lightgray",
             height: "70px",
             //   background: "grey",
           }}
@@ -39,7 +39,9 @@ function NavBar() {
             <img src={search} className=" h-5 w-5 " />
           </div>
 
-          <span className=" whitespace-nowrap">Serach catlouge</span>
+          <span className=" whitespace-nowrap text-[#1F5095] font-semibold texx-[15px]">
+            Search Catalogue
+          </span>
         </span>
         <Content />
         <Journel />
